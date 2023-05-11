@@ -1,5 +1,6 @@
+#line 2 "lex.yy.c"
 
-#line 3 "lex.yy.c"
+#line 4 "lex.yy.c"
 
 #define  YY_INT_ALIGNED short int
 
@@ -447,11 +448,11 @@ char *yytext;
 #line 1 "lex.l"
 #line 2 "lex.l"
 #include <stdio.h>
-#line 451 "lex.yy.c"
+#line 452 "lex.yy.c"
 /* This tells flex to read only one input file */
 /* definicoes regulares */
 /* \t => tabulação; \n => quebra de linha; */
-#line 455 "lex.yy.c"
+#line 456 "lex.yy.c"
 
 #define INITIAL 0
 
@@ -670,7 +671,7 @@ YY_DECL
 	{
 #line 15 "lex.l"
 
-#line 674 "lex.yy.c"
+#line 675 "lex.yy.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -748,7 +749,7 @@ YY_RULE_SETUP
 #line 19 "lex.l"
 ECHO;
 	YY_BREAK
-#line 752 "lex.yy.c"
+#line 753 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
