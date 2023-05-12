@@ -11,13 +11,19 @@ $(TARGET): $(OBJFILES)
 	flex -o lex.yy.c lex.l && \
 	gcc lex.yy.c -o ../../build/a.out
 
-second:
+bank:
 	cd ./src/lib && \
 	flex -o lex-2.yy.c lex-2.l && \
 	gcc lex-2.yy.c -o ../../build/a.out.2
 
-test:
-	./build/a.out < resources/others/1.txt
+main-first-test:
+	./build/a.out < resources/main/1.txt
 
-test-two:
-	./build/a.out < resources/others/2.txt
+main-second-test:
+	./build/a.out < resources/main/2.txt
+
+bank-first-test:
+	./build/a.out.2 < resources/others/1.txt
+
+bank-second-test:
+	./build/a.out.2 < resources/others/2.txt
