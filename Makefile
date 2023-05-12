@@ -17,7 +17,7 @@ second:
 	gcc lex-2.yy.c -o ../../build/a.out.2
 
 test:
-	./build/a.out < resources/1.txt
+	./build/a.out < resources/others/1.txt
 
 test-two:
-	./build/a.out < resources/2.txt
+	./build/a.out < resources/others/2.txt
