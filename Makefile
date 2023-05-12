@@ -1,5 +1,7 @@
 OBJFILES = $(patsubst %.c, %.o, src/lib/lex.l)
-TARGET   = lex-xd
+OBJFILES-TWO = $(patsubst %.c, %.o, src/lib/lex-2.l)
+TARGET   = tp0
+
 
 all: build
 build: $(TARGET)
@@ -9,5 +11,13 @@ $(TARGET): $(OBJFILES)
 	flex -o lex.yy.c lex.l && \
 	gcc lex.yy.c -o ../../build/a.out
 
+second:
+	cd ./src/lib && \
+	flex -o lex-2.yy.c lex-2.l && \
+	gcc lex-2.yy.c -o ../../build/a.out.2
+
 test:
 	./build/a.out < resources/1.txt
+
+test-two:
+	./build/a.out < resources/2.txt
