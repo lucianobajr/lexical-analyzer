@@ -13,3 +13,22 @@ Os tokens gerados pelo analisador léxico são passados para o analisador sintá
 ## Como funciona o flex
 
 ![untitled (1)](https://user-images.githubusercontent.com/45442173/236550435-7b1c88d4-f17d-4555-9198-c656e0f5cfd4.png)
+
+## Executar
+
+### Docker
+
+```sh
+docker build -t lexical-analyzer .
+
+```
+
+```sh
+docker run lexical-analyzer
+```
+
+### SH
+
+```sh
+sh run.sh
+```

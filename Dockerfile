@@ -13,7 +13,11 @@ RUN apt-get update \
 COPY . /usr/src/tp0
 WORKDIR /usr/src/tp0
 
+# compila o arquivo principal lex.l
 RUN make
+
+# compila o arquivo secundário lex-2.l com as definições para um contexto de banco
+RUN make bank
 
 # Roda o Make por padrão
 CMD ["bash", "./run.sh"]
