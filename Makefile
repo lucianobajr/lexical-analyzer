@@ -22,8 +22,20 @@ main-first-test:
 main-second-test:
 	./build/a.out < resources/main/2.txt
 
+main-third-test:
+	./build/a.out < resources/main/3.txt
+
+main-fourth-test:
+	./build/a.out < resources/main/4.txt
+
 bank-first-test:
 	./build/a.out.2 < resources/others/1.txt
 
 bank-second-test:
 	./build/a.out.2 < resources/others/2.txt
+
+bank-third-test:
+	./build/a.out.2 < resources/others/3.txt
+
+bank-fourth-test:
+	./build/a.out.2 < resources/others/4.txt

@@ -10,4 +10,6 @@ Os tokens gerados pelo analisador léxico são passados para o analisador sintá
 
 ![untitled](https://user-images.githubusercontent.com/45442173/236529203-16298c11-b5da-4800-ab1d-7e47ad0b6c7d.png)
 
+## Como funciona o flex
+
 ![untitled (1)](https://user-images.githubusercontent.com/45442173/236550435-7b1c88d4-f17d-4555-9198-c656e0f5cfd4.png)
