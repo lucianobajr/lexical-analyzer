@@ -1,5 +1,5 @@
 OBJFILES = $(patsubst %.c, %.o, src/lib/lex.l)
-OBJFILES-TWO = $(patsubst %.c, %.o, src/lib/lex-2.l)
+OBJFILES-TWO = $(patsubst %.c, %.o, src/lib/lex2.l)
 TARGET   = tp0
 
 
@@ -13,8 +13,8 @@ $(TARGET): $(OBJFILES)
 
 bank:
 	cd ./src/lib && \
-	flex -o lex-2.yy.c lex-2.l && \
-	gcc lex-2.yy.c -o ../../build/a.out.2
+	flex -o lex2.yy.c lex2.l && \
+	gcc lex2.yy.c -o ../../build/a.out.2
 
 main-first-test:
 	./build/a.out < resources/main/1.txt

@@ -1,6 +1,6 @@
-#line 2 "lex-2.yy.c"
+#line 2 "lex2.yy.c"
 
-#line 4 "lex-2.yy.c"
+#line 4 "lex2.yy.c"
 
 #define  YY_INT_ALIGNED short int
 
@@ -725,10 +725,10 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "lex-2.l"
-#line 2 "lex-2.l"
+#line 1 "lex2.l"
+#line 2 "lex2.l"
 #include <stdio.h>
-#line 732 "lex-2.yy.c"
+#line 732 "lex2.yy.c"
 /* This tells flex to read only one input file */
 /* definicoes regulares */
 /* \t => tabulação; \n => quebra de linha; */
@@ -736,7 +736,7 @@ char *yytext;
 /* CNPJ =>  XX. XXX. XXX/0001-XX */
 /* dd/mm/aaaa */
 /* xxx */
-#line 740 "lex-2.yy.c"
+#line 740 "lex2.yy.c"
 
 #define INITIAL 0
 
@@ -953,9 +953,9 @@ YY_DECL
 		}
 
 	{
-#line 44 "lex-2.l"
+#line 44 "lex2.l"
 
-#line 959 "lex-2.yy.c"
+#line 959 "lex2.yy.c"
 
 	while ( /*CONSTCOND*/1 )		/* loops until end-of-file is reached */
 		{
@@ -1015,105 +1015,105 @@ do_action:	/* This label is used only to access EOF actions. */
 case 1:
 /* rule 1 can match eol */
 YY_RULE_SETUP
-#line 45 "lex-2.l"
+#line 45 "lex2.l"
 { /*Espaços em branco, tabulação e quebra de linha devem ser ignorados.*/ }
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 46 "lex-2.l"
+#line 46 "lex2.l"
 {{ printf("Foi encontrado um número de conta bancária. LEXEMA: %s\n", yytext); }}
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 47 "lex-2.l"
+#line 47 "lex2.l"
 {{ printf("Foi encontrado um CPF. LEXEMA: %s\n", yytext); }}
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 48 "lex-2.l"
+#line 48 "lex2.l"
 {{ printf("Foi encontrado um CNPJ. LEXEMA: %s\n", yytext); }}
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 49 "lex-2.l"
+#line 49 "lex2.l"
 {{ printf("Foi encontrado uma data de nascimento. LEXEMA: %s\n", yytext); }}
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 50 "lex-2.l"
+#line 50 "lex2.l"
 {{ printf("Foi encontrado uma código de segurança (CVV). LEXEMA: %s\n", yytext); }}
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 51 "lex-2.l"
+#line 51 "lex2.l"
 {{ printf("Foi encontrado uma senha. LEXEMA: %s\n", yytext); }}
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 52 "lex-2.l"
+#line 52 "lex2.l"
 {{ printf("Foi encontrado um email. LEXEMA: %s\n", yytext); }}
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 53 "lex-2.l"
+#line 53 "lex2.l"
 {{ printf("Foi encontrado uma agência bancária. LEXEMA: %s\n", yytext); }}
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 54 "lex-2.l"
+#line 54 "lex2.l"
 {{ printf("Foi encontrado um número de cartão de crédito. LEXEMA: %s\n", yytext); }}
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 55 "lex-2.l"
+#line 55 "lex2.l"
 {{ printf("Foi encontrado um tipo de conta bancária. LEXEMA: %s\n", yytext); }}
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 56 "lex-2.l"
+#line 56 "lex2.l"
 {{ printf("Foi encontrado um código de barras. LEXEMA: %s\n", yytext); }}
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-#line 57 "lex-2.l"
+#line 57 "lex2.l"
 {{ printf("Foi encontrado um número de cheque. LEXEMA: %s\n", yytext); }}
 	YY_BREAK
 case 14:
 YY_RULE_SETUP
-#line 58 "lex-2.l"
+#line 58 "lex2.l"
 {{ printf("Foi encontrado um CEP. LEXEMA: %s\n", yytext); }}
 	YY_BREAK
 case 15:
 YY_RULE_SETUP
-#line 59 "lex-2.l"
+#line 59 "lex2.l"
 {{ printf("Foi encontrado um token de seguraça avançado. LEXEMA: %s\n", yytext); }}
 	YY_BREAK
 case 16:
 YY_RULE_SETUP
-#line 60 "lex-2.l"
+#line 60 "lex2.l"
 {{ printf("Foi encontrado um número de lote de processamento. LEXEMA: %s\n", yytext); }}
 	YY_BREAK
 case 17:
 YY_RULE_SETUP
-#line 61 "lex-2.l"
+#line 61 "lex2.l"
 {{ printf("Foi encontrado um valor de hora. LEXEMA: %s\n", yytext); }}
 	YY_BREAK
 case 18:
 YY_RULE_SETUP
-#line 62 "lex-2.l"
+#line 62 "lex2.l"
 {{ printf("Foi encontrado um código de verificação de imagem (CAPTCHA). LEXEMA: %s\n", yytext); }}
 	YY_BREAK
 case 19:
 YY_RULE_SETUP
-#line 63 "lex-2.l"
+#line 63 "lex2.l"
 { printf("Token não reconhecido. LEXEMA: %s\n", yytext); }
 	YY_BREAK
 case 20:
 YY_RULE_SETUP
-#line 64 "lex-2.l"
+#line 64 "lex2.l"
 ECHO;
 	YY_BREAK
-#line 1117 "lex-2.yy.c"
+#line 1117 "lex2.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -2118,7 +2118,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 64 "lex-2.l"
+#line 64 "lex2.l"
 
 
 /*codigo em C. Foi criado o main, mas podem ser criadas outras funcoes aqui.*/
