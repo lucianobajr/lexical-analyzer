@@ -9,7 +9,7 @@ printf "\n 2.txt ... \n\n"
 
 make main-second-test
 
-printf "3.txt ... \n\n"
+printf "\n 3.txt ... \n\n"
 
 make main-third-test
 
@@ -29,7 +29,7 @@ printf "\n 2.txt ... \n\n"
 
 make bank-second-test
 
-printf "3.txt ... \n\n"
+printf "\n 3.txt ... \n\n"
 
 make bank-third-test
 
